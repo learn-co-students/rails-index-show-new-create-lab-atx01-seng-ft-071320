@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+  resources :coupons, only: [ :index, :show, :new, :create ]
+  #get '/coupons', to: 'coupons#index', as: 'root'
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
