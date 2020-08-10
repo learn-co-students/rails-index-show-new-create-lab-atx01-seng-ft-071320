@@ -2,10 +2,10 @@
 
 <%= form_tag coupons_path do %>
     <lable>Coupon code:</lable><br>
-    <%= text_field_tag :'coupon_code' %><br>
+    <%= text_field_tag :'coupon[coupon_code]' %><br>
     <br>
     <lable>Store:</lable><br>
-    <%= text_field_tag :'store' %><br>
+    <%= text_field_tag :'coupon[store]' %><br>
     <br>
     <%= submit_tag "Submit Coupon" %> 
 <% end %> 
